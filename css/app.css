@@ -52,7 +52,7 @@ html {
 /* 1800 */
 @media (min-width: 112.5em) { 
   html {
-    font-size: 100%;
+    font-size: 90%;
   }
  }
 
@@ -71,6 +71,7 @@ body, span, button {
 
 body {
   height: 770vh;
+  font-size: 1.6rem;
 }
 
 .container {
@@ -220,10 +221,17 @@ body {
   gap: 2rem;
 }
 
+.news {
+  padding-bottom: 12rem;
+}
+
 .boxNews {
   display: grid;
   overflow: hidden;
   align-items: end;
+  height: auto;
+  -webkit-box-shadow: inset 4px 4px 15px 0px #0c306a;
+  box-shadow: inset 8rem 25rem 0rem 0rem #0c306a;
 }
 
 .newsInfo  {
@@ -248,8 +256,7 @@ body {
 
 .newsImg {
   grid-area: 1 / 1;
-  -webkit-box-shadow: .5rem .5rem .5rem 0px #0c306a, inset 4px 4px 15px 0px #0c306a, .5rem .5rem 1.5rem .5rem rgba(0,23,71,0); 
-box-shadow: .5rem .5rem .5rem 0px #0c306a, inset .4rem .4rem 6rem 5rem #0c306a, .5rem .5rem 1.5rem .5rem #0c306a;
+  height: 100%;
 }
 
 /* welcome */
@@ -301,61 +308,40 @@ box-shadow: .5rem .5rem .5rem 0px #0c306a, inset .4rem .4rem 6rem 5rem #0c306a, 
   color: #fc8833;
 }
 
-.welcomeImg::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: -20rem;
-  right: 0px;
-  height: 100rem;
-  width: 100rem;
-  background: url('../assets/naruto-rasengan.png');
-  background-size: cover;;
-}
-
-.welcome {
-  padding-top: 6rem;
-}
-
-/* level */
-.level {
-  background: url('../assets/mapa.png') no-repeat;
-  height: 100%;
-  background-size: cover;
-  margin-top: -12rem;
-}
-
-
-
-
-
-
-
 
 .bg {
   position: relative;
-  overflow: hidden;
-  background: tomato;
-  padding-top: -13rem;
-  padding-bottom: 65rem;
+  width: 100%;
+  height: auto;
+  overflow: hidden !important;
+  background: #fc8833;
+  padding-top: 15rem;
+  padding-bottom: 23rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.b {
+/* .b {
  position: absolute;
-}
+ background-size: cover;
+} */
 
 .b-top {
+  top: calc(5rem - 8vw) ;
   width: 101%;
   left: 0;
   height: 50%;
+  position: absolute;
 }
 
 .b-top img {
   transform: translate(-50%);
   top: -.5rem;
   left: 50%;
-  border-style: none;
   position: absolute;
+  display: block;
+  height: auto;
+  width: 100%;
 }
 
 .b-bottom {
@@ -363,9 +349,131 @@ box-shadow: .5rem .5rem .5rem 0px #0c306a, inset .4rem .4rem 6rem 5rem #0c306a, 
   left: 0;
   bottom: 0;
   height: 50%;
+  position: absolute; 
+}
+
+.b-bottom img {
+  transform: translate(-50%);
+  bottom: 0;
+  left: 50%;
+
   position: absolute;
 }
 
-.narutoRasengan p {
-  color: #000;
+
+
+.contentInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  height: 20rem;
+  z-index: 2000;
 }
+
+.copyInfo {
+  position: absolute;
+  left: 20%;
+  align-self: flex-start;
+  margin: -5rem auto;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.copyInfo h2 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+.copyInfo h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.copyInfo p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: .5rem;
+}
+
+.copyInfo button {
+  border-radius: .5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  margin: 0 auto;
+  width: 13rem;
+  border: none;
+  background: #fff;
+  outline: none;
+  color: #fc8834;
+}
+
+.contentIMG { 
+  position: absolute;
+  right: 0;
+  width: 60%;
+  height: auto;
+  transform: translateY(3.3rem);
+}
+
+/*
+.contentInfo {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.5;
+  font-weight: bold;
+  margin: 0 auto;
+  letter-spacing: .1;
+  padding-left: 25rem;
+}
+
+.contentInfo h2 {
+  font-size: 3rem;
+}
+
+.contentInfo h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contentInfo p {
+  width: 30rem;
+  font-size: .8rem;
+  margin-bottom: 1rem;
+}
+
+.contentInfo button {
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  background: #fff;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  color: #fc8833;
+}
+
+.contentIMG {
+  transform: translateY(6.2em);
+}
+
+.contentIMG img {
+  width: 70rem;
+  height: auto;
+} 
+
+*/
