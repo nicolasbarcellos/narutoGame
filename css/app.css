@@ -30,17 +30,17 @@ html {
 }
 
 /* 600px */
-@media (max-width: 37.5em) { 
+@media only screen and (max-width: 37.5em) { 
   
  }
 
 /* 900px */
-@media (max-width: 56.25em) { 
+@media only screen and (max-width: 56.25em) { 
   
  }
 
 /* 1200px */
-@media (max-width: 75em) {
+@media only screen and (max-width: 75em) {
   html {
     font-size: 56.25%;
   }
@@ -53,7 +53,7 @@ html {
  } */
 
 /* 1800 */
-@media (min-width: 112.5em) { 
+@media only screen and (min-width: 112.5em) { 
   html {
     font-size: 75%;
   }
@@ -90,8 +90,8 @@ body {
 
 .header {
   width: 100%;
-  background: #001747;
-  opacity: .9;
+  background: rgb(0, 23, 71, .8);
+  /* opacity: .8; */
   height: 7rem;
   position: fixed;
   z-index: 20000;
@@ -166,8 +166,8 @@ body {
 }
 
 .social img{
-  height: 3.6rem;
-  width: 3.6rem;
+  max-height: 6em;
+  max-width: 6rem;
 }
 
 .langIcons a {
@@ -834,7 +834,7 @@ body {
 
 /* Media queries */
 
-@media (min-width: 1800px) {
+@media only screen and (min-width: 1800px) {
 
  .wrapperSymbolsLeft, .wrapperSymbolsRight {
    height: 33rem;
@@ -899,9 +899,77 @@ body {
   }
 } */
 
-@media (max-width: 1080px) {
- 
+@media only screen and (max-width: 1070px) {
+  .nav {
+    justify-content: center;
+  }
+
+  .logo {
+    margin-right: 4rem;
+  }
+
+  .social {
+    margin: 0 2rem
+  }
 }
+
+@media only screen and (max-width: 840px) {
+  .nav {
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .header {
+    height: auto;
+    display: flex;
+  }
+
+  .nav {
+    height: 10rem;
+   display: flex;
+   justify-content: space-evenly;
+  }
+
+  .login {
+    padding: .8rem 1.3rem;
+    order: 1;
+  }
+
+  .login img {
+    width: 2rem;
+  }
+
+  .menuMobile {
+    order: 3;
+    position: initial !important;
+  }
+
+  .logo {
+    order: 2;
+    margin: 0;
+    transform: none;
+    max-width: 30rem;
+  }
+
+  .social img {
+    width: 5rem;
+    height: auto;
+  }
+
+  /* .panel.show {
+    position: absolute !important;
+  }
+
+  .panel {
+    position: absolute !important;
+  } */
+
+}
+
+
+
+
 
 .menuMobile {
   position: fixed;
@@ -964,7 +1032,7 @@ body {
   width: 20rem;
   height: auto;
   background: #fc8834;
-  opacity: 1;
+  opacity: 0;
   visibility: hidden;
   transition: all .3s;
 }
