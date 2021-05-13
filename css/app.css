@@ -26,7 +26,11 @@ a {
 }
 
 html {
- font-size: 62.5%; 
+ font-size: 62.5%;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 /* 600px */
@@ -89,6 +93,7 @@ body {
 /* Header */
 
 .header {
+  max-width: 100%;
   width: 100%;
   background: rgb(0, 23, 71, .8);
   /* opacity: .8; */
