@@ -3,6 +3,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;700&display=swap');
 
+
+
+
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: 80%;
+}
+
+/* .swiper-slide:nth-child(2n) {
+  width: 60%;
+}
+
+.swiper-slide:nth-child(3n) {
+  width: 40%;
+} */
+
 * {
   margin: 0;
   padding: 0;
@@ -927,6 +975,10 @@ body {
   border: none;
 }
 
+.mySwiper {
+  display: none;
+}
+
 /* Media queries */
 @media only screen and (max-width: 1800px) {
   .news {
@@ -1026,7 +1078,8 @@ body {
 
 @media only screen and (max-width: 1068px) {
   .news {
-    padding-bottom: 50rem;
+    padding-bottom: 70rem;
+    padding-top: 30rem;
   }
 
   .newsImg {
@@ -1034,28 +1087,36 @@ body {
     background-position: (50%, 50%);
   }
 
+  .boxNews {
+    height: auto;
+    width: 90%;
+  }
+
+  .newsInfo {
+    margin: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+
+  .titleNews {
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: #000;
+
+  }
+
   .newsInfo h3 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    line-height: 1.5;
+    line-height: 2;
+    font-size: 2rem;
   }
 
   .newsInfo p {
     font-size: 2rem;
   }
-
-  .wrapperNews {
-    grid-template-columns: 1fr;
-    gap: 6rem;
-  }
-
-  .newsTitle .mainTitle {
-    font-size: 4rem;
-  }
-
-  .newsTitle .subTitle {
-    font-size: 2.8rem
-  }
+  
 
   .bg {
     padding: 0;
@@ -1133,6 +1194,14 @@ body {
   .r4 {
     transform: translate(-8rem, 8rem);
   }
+
+  main {
+    display: none;
+  }
+
+  .mySwiper {
+    display: flex;
+  }
 }
 
 @media only screen and (max-width: 960px) {
@@ -1172,6 +1241,10 @@ body {
 }
 
 @media only screen and (max-width: 750px) {
+  .news {
+    padding-bottom: 39rem;
+    padding-top: 0rem;
+  }
   .header {
     height: auto;
     display: flex;
@@ -1194,7 +1267,7 @@ body {
 
   .menuMobile {
     order: 3;
-    position: initial !important;
+    position: initial;
   }
 
   .logo {
@@ -1210,10 +1283,10 @@ body {
   }
 
   .newsTitle .mainTitle {
-    font-size: 2.5rem !important;
+    font-size: 2.5rem;
   }
   .newsTitle .subTitle {
-    font-size: 1.5rem !important;
+    font-size: 1.5rem;
   }
 
   .newsInfo {
@@ -1222,7 +1295,7 @@ body {
   }
 
   .newsInfo h3 {
-    font-size: 2rem !important;
+    font-size: 2rem;
   }
 
   .sasukeHome {
@@ -1295,6 +1368,16 @@ body {
 }
 
 @media only screen and (max-width: 580px) { 
+  .boxNews {
+    height: 100%;
+  }
+
+  .newsImg img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+
   .copyInfo {
     text-align: center;
     padding-right: 7.3%;
@@ -1307,11 +1390,14 @@ body {
   }
 
   .newsInfo p {
-    font-size: 1.5rem;
+    font-weight: bold;
+    font-size: 2rem;
   }
 
   .newsInfo h3 {
-    font-size: 2rem !important;
+    margin-bottom: .5rem;
+    line-height: 1.5;
+    font-size: 2rem;
   }
 
   .mapa {
@@ -1495,6 +1581,10 @@ body {
 }
 
 @media only screen and (max-width: 419px) {
+  .newsInfo h3 {
+    line-height: 1;
+  }
+
   .newsInfo p {
     font-size: 1.5rem;
   }
@@ -1584,6 +1674,10 @@ body {
 }
 
 @media only screen and (max-width: 365px) {
+  /* .news {
+    padding-bottom: 39rem;
+    padding-top: 20rem;
+  } */
   .boxIMG {
     width: 23rem;
   }
@@ -1683,8 +1777,4 @@ body {
     line-height: 2;
   }
 }
-
-
-
-
 
