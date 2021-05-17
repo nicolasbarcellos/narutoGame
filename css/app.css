@@ -680,9 +680,8 @@ body {
 .Gbg {
   position: relative;
   width: 100%;
-  height: auto;
   z-index: -2000;
-  /* overflow: hidden !important; */
+  overflow: visible;
   background: #5b8c79;
   margin-top: 0;
   margin-bottom: 0;
@@ -793,6 +792,15 @@ body {
   text-transform: uppercase;
 }
 
+.footerFlags {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footerFlags img {
+  margin-left: 1rem;
+}
+
 .topFooter {
   padding: 1.5rem 0;
   width: 100%;
@@ -827,7 +835,8 @@ body {
 }
 
 .footerMenu {
-  width: 47%;
+  max-width: 100%;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
@@ -847,12 +856,6 @@ body {
   margin-left: 2rem;
   height: 24px;
   background-color: rgba(255, 255, 255, .3);
-}
-
-.subFooter .footerFlags{
- display: flex;
- width: 10%;
- justify-content: space-around;
 }
 
 .subFooter .footerFlags img {
@@ -944,8 +947,7 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute;
-  right: 0;
-  top: 0;
+  top: 0rem;
   width: 20rem;
   height: auto;
   background: #fc8834;
@@ -957,7 +959,7 @@ body {
 .panel.show {
   visibility: visible;
   opacity: .9;
-  transform: translate(0, 4rem);
+  transform: translate(-16rem, 4rem);
 }
 
 .panel ul li {
@@ -977,6 +979,17 @@ body {
 
 .mySwiper {
   display: none;
+}
+
+.socialList a {
+  display: flex;
+  align-items: center;
+}
+
+.socialList a img {
+  margin-left: .5rem;
+  width: 2rem;
+  color: #fff;
 }
 
 /* Media queries */
@@ -1048,6 +1061,10 @@ body {
   .contentSasuke {
     max-width: 74%;
   }
+
+  .sasukeInfo {
+    margin-left: -20rem;
+  }
 }
 
 @media only screen and (max-width: 1196px) {
@@ -1059,6 +1076,10 @@ body {
   }
   .circle {
     height: 70%;
+  }
+
+  .sasukeIMG {
+    width: 70rem;
   }
 }
 
@@ -1208,6 +1229,43 @@ body {
   .boxTitle h3 {
     font-size: 14rem;
   }
+
+  .sasukeWrapper {
+    position: relative;
+    flex-direction: column;
+  }
+
+  .sasukeIMG {
+    width: 62rem;
+  }
+
+  .Gbg {
+    margin-top: 20rem;
+  }
+
+  .sasukeInfo button {
+    background: #5b8c79;
+    color: #fff;
+  }
+
+  .sasukeInfo {
+    padding-top: 30rem;
+    padding-left: 7.3%;
+    z-index: 1000000;
+    color: #000;
+    position: absolute;
+    bottom: -70rem;
+  }
+
+  .sasukeInfo h2 {
+    color: #5b8c79;
+    font-size: 6rem;
+  }
+
+  .sasukeInfo p {
+    font-size: 2rem;
+  }
+
 }
 
 @media only screen and (max-width: 840px) {
@@ -1241,6 +1299,19 @@ body {
 }
 
 @media only screen and (max-width: 750px) {
+  .panel {
+    top: .5rem;
+  }
+
+  .panel.show {
+    transform: translate(0, 4rem);
+  }
+
+
+  .Gbg {
+    margin-top: 44rem;
+  }
+
   .news {
     padding-bottom: 39rem;
     padding-top: 0rem;
@@ -1251,14 +1322,18 @@ body {
   }
 
   .nav {
-    height: 10rem;
+    padding: rem 0;
    display: flex;
    justify-content: space-evenly;
   }
 
   .login {
     padding: .8rem 1.3rem;
-    order: 1;
+    order: 3;
+  }
+
+  .logo {
+    width: 10rem;
   }
 
   .login img {
@@ -1266,7 +1341,7 @@ body {
   }
 
   .menuMobile {
-    order: 3;
+    order: 2;
     position: initial;
   }
 
@@ -1368,12 +1443,23 @@ body {
 }
 
 @media only screen and (max-width: 580px) { 
+  .sasukeWrapper {
+    height: 58rem;
+  }
+  .sasukeIMG {
+    width: 50rem;
+  }
+
+  .Gbg {
+    height: 50rem;
+  }
+
   .boxNews {
     height: 100%;
   }
 
   .newsImg img {
-    object-fit: fill;
+    object-fit: cover;
     height: 100%;
   }
 
@@ -1475,6 +1561,51 @@ body {
 }
 
 @media only screen and (max-width: 495px) {
+  .footerMenu a {
+    font-size: .6rem;
+  }
+
+  .footerPrivacy a {
+    font-size: .6rem;
+  }
+
+  .subFooter p {
+    font-size: .8rem;
+  }
+
+  .subFooter {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+  }
+
+  .sasukeIMG {
+    width: 45rem;
+  }
+
+  .sasukeWrapper {
+    height: 48rem;
+  }
+
+  .s-top {
+    top: calc(5rem - 13vw);
+  }
+
+  .Gbg {
+    height: 45rem;
+  }
+  .sasukeInfo h2 {
+    font-size: 5rem;
+  }
+
+  .sasukeInfo p {
+    font-size: 1.6rem;
+  }
+
+  .sasukeInfo button {
+    font-size: 2rem;
+  }
+
+
   .newsTitle .mainTitle {
     font-size: 1.9rem !important;
   }
@@ -1581,6 +1712,19 @@ body {
 }
 
 @media only screen and (max-width: 419px) {
+
+
+  .sasukeInfo h2 {
+    font-size: 4.5rem;
+  }
+
+  .sasukeInfo p {
+    font-size: 1.3rem;
+  }
+
+  .sasukeInfo button {
+    font-size: 1.8rem;
+  }
   .newsInfo h3 {
     line-height: 1;
   }
@@ -1674,10 +1818,43 @@ body {
 }
 
 @media only screen and (max-width: 365px) {
-  /* .news {
-    padding-bottom: 39rem;
-    padding-top: 20rem;
-  } */
+  .footerMenu a {
+    font-size: .4rem;
+  }
+
+  .footerPrivacy a {
+    font-size: .4rem;
+  }
+
+  .subFooter p {
+    font-size: .6rem;
+  }
+
+  .sasukeInfo h2 {
+    font-size: 2.5rem;
+    line-height: 2;
+  }
+
+  .sasukeInfo p {
+    font-size: 1.5rem;
+  }
+
+  .sasukeInfo button {
+    font-size: 1.5rem;
+  }
+
+  .sasukeIMG {
+    width: 35rem;
+  }
+
+  .Gbg {
+    height: 35rem;
+  }
+
+  .sasukeInfo {
+    padding-top: 40rem;
+  }
+
   .boxIMG {
     width: 23rem;
   }
