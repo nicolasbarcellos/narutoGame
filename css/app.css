@@ -1313,7 +1313,7 @@ body {
   }
 
   .news {
-    padding-bottom: 39rem;
+    padding-bottom: 44rem;
     padding-top: 0rem;
   }
   .header {
@@ -1455,12 +1455,17 @@ body {
   }
 
   .boxNews {
-    height: 100%;
+    height: 72%;
   }
 
   .newsImg img {
-    object-fit: cover;
-    height: 100%;
+    object-fit: fill;
+    height: 94%;
+  }
+
+
+  .swiper-slide {
+    width: 90%;
   }
 
 
@@ -1573,10 +1578,6 @@ body {
     font-size: .8rem;
   }
 
-  .subFooter {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr; */
-  }
 
   .sasukeIMG {
     width: 45rem;
@@ -1623,9 +1624,6 @@ body {
     font-size: 4rem;
   }
 
-  .news {
-    padding-bottom: 42rem;
-  }
   .b-top {
     top: calc(1rem - 8vw);
   }
@@ -1712,7 +1710,20 @@ body {
 }
 
 @media only screen and (max-width: 419px) {
+  .news {
+    padding-bottom: 34rem;
+  }
 
+  .boxNews {
+    height: 62%;
+  }
+
+
+  .swiper-slide {
+    gap: none;
+    width: 102%;
+    margin-right: -40px !important;
+  }
 
   .sasukeInfo h2 {
     font-size: 4.5rem;
@@ -1734,7 +1745,7 @@ body {
   }
 
   .newsInfo h3 {
-    font-size: 1.9rem;
+    font-size: 1.4rem;
   }
 
   .mapa {

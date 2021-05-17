@@ -54,7 +54,7 @@ function aaa() {
 
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: "auto",
-  spaceBetween: 30,
+  spaceBetween: 3,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
