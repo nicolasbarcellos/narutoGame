@@ -693,7 +693,7 @@ body {
   left: 0;
   height: 50%;
   position: absolute;
-  z-index: 200000000000;
+  z-index: 20000;
 }
 
 .s-top img {
