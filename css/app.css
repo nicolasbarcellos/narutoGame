@@ -413,13 +413,13 @@ body {
   bottom: 0;
   height: 50%;
   position: absolute; 
+  overflow: hidden;
 }
 
 .b-bottom img {
   transform: translate(-50%);
   bottom: 0;
   left: 50%;
-
   position: absolute;
 }
 
@@ -1565,7 +1565,10 @@ body {
 
 }
 
-@media only screen and (max-width: 495px) {
+@media only screen and (max-width: 494.9px) {
+  .bg {
+    margin-top: 18rem;
+  }
   .footerMenu a {
     font-size: .6rem;
   }
@@ -1616,8 +1619,16 @@ body {
 
   .contentIMG {
     position: absolute;
-    bottom: 0rem;
-    top: -6rem;
+    top: -7rem;
+  }
+
+  .bg {
+    height: calc(55% - 1vh);
+  }
+
+  .contentIMG img {
+
+    width: 100rem;
   }
 
   .copyInfo h2 {
@@ -1710,6 +1721,14 @@ body {
 }
 
 @media only screen and (max-width: 419px) {
+  .bg {
+    height: calc(57% - 8vh);
+  }
+
+  .contentIMG {
+    top: -1rem;
+  }
+
   .news {
     padding-bottom: 34rem;
   }
@@ -1828,7 +1847,21 @@ body {
   
 }
 
+@media only screen and (max-width: 376px) {
+  .bg {
+    height: calc(45% - 8vh);
+  }
+}
+
 @media only screen and (max-width: 365px) {
+  .bg {
+    height: calc(60% - 8vh);
+  }
+
+  .contentIMG {
+    top: 6rem;
+  }
+
   .footerMenu a {
     font-size: .4rem;
   }
@@ -1959,7 +1992,15 @@ body {
   }
 }
 
-@media only screen and (max-width: 265px) {
+@media only screen and (max-width: 295px) {
+  .bg {
+    height: calc(43% - 8vh);
+  }
+
+  .contentIMG {
+    top: 7rem;
+  }
+
   .copyInfo h2 {
     font-size: 2rem;
     line-height: 2;
