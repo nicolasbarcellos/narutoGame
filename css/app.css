@@ -835,17 +835,17 @@ body {
 }
 
 .footerMenu {
-  max-width: 100%;
-  width: 100%;
+  text-align: center;
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .footerMenu li {
   padding: .5rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 
@@ -853,7 +853,7 @@ body {
   content: '';
   display: inline-block;
   width: 2px;
-  margin-left: 2rem;
+  margin-left: 1rem;
   height: 24px;
   background-color: rgba(255, 255, 255, .3);
 }
@@ -870,7 +870,7 @@ body {
 .footerPrivacy li {
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: .5rem;
 }
 
 .subFooter p {
@@ -881,7 +881,7 @@ body {
   content: '';
   display: inline-block;
   width: 2px;
-  margin-left: 2rem;
+  margin-left: 1rem;
   height: 24px;
   background-color: rgba(255, 255, 255, .3);
 }
@@ -1442,7 +1442,8 @@ body {
   }
 }
 
-@media only screen and (max-width: 580px) { 
+@media only screen and (max-width: 580px) {
+
   .sasukeWrapper {
     height: 58rem;
   }
@@ -1570,15 +1571,15 @@ body {
     margin-top: 18rem;
   }
   .footerMenu a {
-    font-size: .6rem;
+    font-size: 1rem;
   }
 
   .footerPrivacy a {
-    font-size: .6rem;
+    font-size: 1rem;
   }
 
   .subFooter p {
-    font-size: .8rem;
+    font-size: 1rem;
   }
 
 
@@ -1863,15 +1864,15 @@ body {
   }
 
   .footerMenu a {
-    font-size: .4rem;
+    font-size: .8rem;
   }
 
   .footerPrivacy a {
-    font-size: .4rem;
+    font-size: .8rem;
   }
 
   .subFooter p {
-    font-size: .6rem;
+    font-size: .9rem;
   }
 
   .sasukeInfo h2 {
