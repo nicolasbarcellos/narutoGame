@@ -1561,7 +1561,7 @@ body {
     transform: translate(0rem, -1rem);
   }
   .r4 {
-    transform: translate(-10rem, -2rem);
+    transform: translate(-9rem, -2rem);
   }
 
 }
@@ -1679,11 +1679,12 @@ body {
   }
 
   .boxIMG {
+    width: 27rem;
     transform: translateY(9rem);
   }
 
   .author h3 {
-    margin-top: -8rem;
+    margin-top: -5rem;
   }
   .roundLeft, .roundRight {
     width: 10rem;
@@ -1784,16 +1785,18 @@ body {
   }
 
   .l1 {
-    transform: translate(4rem, 0rem);
+    transform: translate(2rem, 0rem);
     width: 11rem;
   }
 
   .circleLeft {
-    left: 9px;
+    top: 18.5rem;
+    left: 17px;
   }
 
   .circleRight {
-    right: 10px;
+    top: 18.5rem;
+    right: 17px;
   }
 
   .boxTitle h3 {
@@ -1809,7 +1812,7 @@ body {
   }
 
   .author h3 {
-    margin-top: -9rem;
+    margin-top: -4rem;
   }
   .roundLeft, .roundRight {
     width: 9rem;
@@ -1820,7 +1823,7 @@ body {
   }
 
   .l2 {
-    transform: translate(-.5rem, -2rem);
+    transform: translate(-.9rem, -2rem);
   }
 
   .l3 {
@@ -1828,21 +1831,21 @@ body {
   }
 
   .l4 {
-    transform: translate(5rem, -6rem);
+    transform: translate(4rem, -6rem);
   }
 
   .r1 {
-    transform: translate(-4rem, 0rem);
+    transform: translate(-3rem, 0rem);
   }
 
   .r2 {
-    transform: translate(0rem, -2rem);
+    transform: translate(.3rem, -2rem);
   }
   .r3 {
     transform: translate(0rem, -3rem);
   }
   .r4 {
-    transform: translate(-5rem, -6rem);
+    transform: translate(-4rem, -6rem);
   }
 
   
@@ -1851,6 +1854,10 @@ body {
 @media only screen and (max-width: 376px) {
   .bg {
     height: calc(45% - 8vh);
+  }
+
+  .boxIMG img {
+   /* height: 20rem;g */
   }
 }
 
