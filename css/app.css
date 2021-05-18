@@ -680,8 +680,7 @@ body {
 .Gbg {
   position: relative;
   width: 100%;
-  z-index: -2000;
-  overflow: visible;
+  /* overflow: hidden; */
   background: #5b8c79;
   margin-top: 0;
   margin-bottom: 0;
@@ -690,10 +689,11 @@ body {
 
 .s-top {
   top: calc(5rem - 8vw) ;
-  width: 101%;
+  width: 113%;
   left: 0;
   height: 50%;
   position: absolute;
+  z-index: 200000000000;
 }
 
 .s-top img {
@@ -725,9 +725,14 @@ body {
 
 .sasukeWrapper {
   color: #fff;
+  position: relative;
   display: flex;
   align-items: center;
-  height: 70rem;
+  height: 80rem;
+}
+
+.sasukeIMG {
+  
 }
 
 .sasukeInfo {
