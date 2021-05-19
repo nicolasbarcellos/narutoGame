@@ -1,11 +1,31 @@
-/* Global Settings */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;700&display=swap');
+
+@font-face {
+  font-family: GT-America;
+  src: url(../fonts/GTAmericaBold.ttf);
+}
+
+@font-face {
+  font-family: Tahoama;
+  src: url(../fonts/TAHOAMA.ttf);
+}
+
+@font-face {
+  font-family: Phagspa;
+  src: url(../fonts/phagspa.ttf);
+}
 
 
+li, ul, a {
+  font-family: Phagspa !important;
+}
 
+h2, h3 {
+  font-family: GT-America !important;
+}
 
+p {
+  font-family: Tahoama !important;
+}
 
 .swiper-container {
   width: 100%;
@@ -413,7 +433,6 @@ body {
   bottom: 0;
   height: 50%;
   position: absolute; 
-  overflow: hidden;
 }
 
 .b-bottom img {
@@ -421,8 +440,8 @@ body {
   bottom: 0;
   left: 50%;
   position: absolute;
+  /* z-index: 20000; */
 }
-
 
 
 .contentInfo {
@@ -482,6 +501,7 @@ body {
 }
 
 .contentIMG { 
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-self: flex-end;
@@ -489,12 +509,70 @@ body {
   width: 100%;
   height: auto;
   overflow: hidden;
-  transform: translatey(5rem);
+}
+
+.a1 {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.b1 {
+  position: absolute;
+  top: 0rem;
+  left: 2rem;
+  opacity: 0;
+  visibility: hidden;
+  margin-left: 4rem;
+}
+
+.c1 {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.c2 {
+  opacity: 0;
+  visibility: hidden;
 }
 
 
+.show {
+  opacity: 1;
+  visibility: visible;
+  animation: moveRight 1s ease-in-out forwards;
+}
 
-/* sasuke */
+.left {
+  /* transform: translateX(-100%) ; */
+}
+
+
+@keyframes moveLeft {
+  0% {
+    transform: translate(-6%, 0);
+    visibility: hidden;
+    opacity: 0;
+  } 
+  100% {
+    opacity: 1;
+    visibility: inherit;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translate(6%, 0);
+    visibility: hidden;
+    opacity: 0;
+  } 
+  100% {
+    opacity: 1;
+    visibility: inherit;
+    transform: translate(0, 0);
+  }
+}
 
 .sasukeHome {
   position: relative;
@@ -731,9 +809,7 @@ body {
   height: 80rem;
 }
 
-.sasukeIMG {
-  
-}
+
 
 .sasukeInfo {
   display: flex;
@@ -1056,6 +1132,10 @@ body {
 }
 
 @media only screen and (max-width: 1440px) {
+  .b1 {
+    top: -5rem;
+    left: 5rem;
+  }
   .copyInfo p {
     width: 80%;
   }
@@ -1103,6 +1183,11 @@ body {
 }
 
 @media only screen and (max-width: 1068px) {
+  .b1 {
+    height: 74rem;
+    top: 12rem;
+    left: 0;
+  }
   .news {
     padding-bottom: 70rem;
     padding-top: 30rem;
@@ -1304,6 +1389,7 @@ body {
 }
 
 @media only screen and (max-width: 750px) {
+
   .panel {
     top: .5rem;
   }
@@ -1389,6 +1475,11 @@ body {
 }
 
 @media only screen and (max-width: 670px) {
+    .b1 {
+    height: 83%;
+    top: 8rem;
+    left: 0;
+  }
   .sasukeHome {
     height: 70rem;
     width: 100%;
@@ -1448,6 +1539,11 @@ body {
 }
 
 @media only screen and (max-width: 580px) {
+  .b1 {
+    height:auto;
+    top: 0rem;
+    left: 0;
+  }
 
   .sasukeWrapper {
     height: 58rem;
@@ -1728,6 +1824,11 @@ body {
 }
 
 @media only screen and (max-width: 419px) {
+  .b1 {
+    height: 100%;
+    top: -3rem;
+    left: 0;
+  }
   .bg {
     height: calc(57% - 8vh);
   }
@@ -1857,6 +1958,11 @@ body {
 }
 
 @media only screen and (max-width: 376px) {
+  .b1 {
+    height: 100%;
+    top: -3rem;
+    left: 0;
+  }
   .bg {
     height: calc(45% - 8vh);
   }
@@ -1867,6 +1973,11 @@ body {
 }
 
 @media only screen and (max-width: 365px) {
+  .b1 {
+    height: 100%;
+    top: -3rem;
+    left: 0;
+  }
   .bg {
     height: calc(60% - 8vh);
   }

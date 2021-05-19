@@ -11,6 +11,37 @@ const social = document.querySelector('.social');
 const flags = document.querySelector('.langIcons');
 const news = document.querySelector('main');
 const mySwiper = document.querySelector('.mySwiper');
+const imgNaruto = document.querySelector('.contentImg');
+const a1 = document.querySelector('.a1');
+const b1 = document.querySelector('.b1');
+const c1 = document.querySelector('.c1');
+const c2 = document.querySelector('.c2');
+
+
+
+a1.classList.add('show');
+c1.classList.add('show');
+
+function showImage() {
+  if (a1.classList.contains('show')) {
+    a1.classList.remove('show');
+    b1.classList.add('show');
+  } else {
+    a1.classList.add('show');
+    b1.classList.remove('show');
+  }
+
+  if (c1.classList.contains('show')) {
+    c1.classList.remove('show');
+    c2.classList.add('show');
+  } else {
+    c1.classList.add('show');
+    c2.classList.remove('show');
+  }
+ 
+}
+
+setInterval(showImage, 5000);
 
 function test(x) {
   if (x.matches) {
@@ -21,12 +52,6 @@ function test(x) {
     menuMobile.style.display = 'none';
     menu.style.display = 'flex';
   }
-
-  // if (newsSwiper.matches) {
-  //   news.style.display = 'none';
-  // } else {
-  //   mySwiper.style.display = 'block';
-  // }
 
   if (mobile.matches) {
     social.style.display = 'none';
@@ -40,6 +65,7 @@ function test(x) {
 }
 
 
+
 function aaa() {
 
     if (panel.classList.contains('show')) {
@@ -51,6 +77,10 @@ function aaa() {
      panel.classList.add('show');
     } 
 }
+
+
+
+
 
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: "auto",
@@ -68,3 +98,4 @@ mobile.addEventListener('change', test);
 test(x);
 test(mobile);
 test(newsSwiper);
+AOS.init();
