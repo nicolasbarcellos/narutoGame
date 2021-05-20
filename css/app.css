@@ -543,9 +543,7 @@ body {
   animation: moveRight 1s ease-in-out forwards;
 }
 
-.left {
-  /* transform: translateX(-100%) ; */
-}
+
 
 
 @keyframes moveLeft {

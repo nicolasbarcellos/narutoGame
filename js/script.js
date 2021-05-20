@@ -41,7 +41,7 @@ function showImage() {
  
 }
 
-setInterval(showImage, 1000);
+setInterval(showImage, 5000);
 
 function test(x) {
   if (x.matches) {
