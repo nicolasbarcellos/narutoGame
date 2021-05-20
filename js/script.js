@@ -19,29 +19,29 @@ const c2 = document.querySelector('.c2');
 
 
 
-a1.classList.add('show');
-c1.classList.add('show');
+a1.classList.add('showLeft');
+c1.classList.add('showLeft');
 
 function showImage() {
-  if (a1.classList.contains('show')) {
-    a1.classList.remove('show');
-    b1.classList.add('show');
+  if (a1.classList.contains('showLeft')) {
+    a1.classList.remove('showLeft');
+    b1.classList.add('showLeft');
   } else {
-    a1.classList.add('show');
-    b1.classList.remove('show');
+    a1.classList.add('showLeft');
+    b1.classList.remove('showLeft');
   }
 
-  if (c1.classList.contains('show')) {
-    c1.classList.remove('show');
-    c2.classList.add('show');
+  if (c1.classList.contains('showLeft')) {
+    c1.classList.remove('showLeft');
+    c2.classList.add('showLeft');
   } else {
-    c1.classList.add('show');
-    c2.classList.remove('show');
+    c1.classList.add('showLeft');
+    c2.classList.remove('showLeft');
   }
  
 }
 
-setInterval(showImage, 5000);
+setInterval(showImage, 1000);
 
 function test(x) {
   if (x.matches) {
