@@ -174,7 +174,7 @@
 
 
       <section class="contentInfo">
-          <div class="copyInfo">
+          <div class="copyInfo"  data-aos="fade-up-right">
             <h2>BEM VINDO AO </h2>
             <h2> NARUTO GAME </h2>
             <h3>AVENTURE-SE nessa aventura ninja</h3>
@@ -257,7 +257,7 @@
 
 
       <section class="sasukeWrapper">
-          <div class="sasukeInfo">
+          <div class="sasukeInfo"  >
             <h2>ESCOLHA SEU</h2>
             <h2> PERSONAGEM </h2>
             <p>Você é livre para personalizar seu personagem e criar suas próprias combinações de habilidades, invocações, clãs e elementos</p>
@@ -318,7 +318,10 @@
 <script src="js/anime.min.js"></script>
 <script src="js/script.js"></script>
 <script>
-  AOS.init();
+  AOS.init({
+    once: false,
+    mirror: true,
+  });
 </script>
 </body>
 

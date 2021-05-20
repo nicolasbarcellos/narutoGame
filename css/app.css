@@ -456,7 +456,7 @@ body {
 
 .copyInfo {
   align-self: flex-start;
-  transform: translateX(16rem);
+  padding-left: 10%;
   color: #fff;
   text-align: center;
   display: flex;
@@ -466,7 +466,6 @@ body {
 }
 
 .copyInfo h2 {
-  font-family: gt-america, sans-serif;
   font-size: 6rem;
   letter-spacing: 2px;
   margin-bottom: -2rem;
@@ -519,7 +518,7 @@ body {
 .b1 {
   position: absolute;
   top: 0rem;
-  left: 2rem;
+  left: -3rem;
   opacity: 0;
   visibility: hidden;
   margin-left: 4rem;
