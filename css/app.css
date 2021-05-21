@@ -873,6 +873,8 @@ body {
 }
 
 .sasukeWrapper {
+  transform: rotate(180deg);
+  justify-content: center;
   color: #fff;
   position: relative;
   display: flex;
@@ -881,15 +883,15 @@ body {
 }
 
 
-
 .sasukeInfo {
+  order: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  transform: rotate(180deg) translate(-11rem, 7rem);
   line-height: 1.5;
+  padding-top: 10rem;
 }
 
 .sasukeInfo h2 {
@@ -915,12 +917,11 @@ body {
   border: none;
   text-transform: uppercase;
   font-weight: bold;
-  font-family: Lexend, sans-serif;
   font-size: 2rem;
 }
 
 .sasukeIMG {
-  transform: rotatex(180deg);
+  transform: rotatex(360deg);
   overflow: visible;
   max-width: 80rem;
   height: auto;
@@ -1400,7 +1401,7 @@ body {
   }
 
   .Gbg {
-    margin-top: 20rem;
+    /* margin-top: 10rem; */
   }
 
   .sasukeInfo button {
@@ -1409,12 +1410,15 @@ body {
   }
 
   .sasukeInfo {
-    padding-top: 30rem;
-    padding-left: 7.3%;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
     z-index: 1000000;
     color: #000;
     position: absolute;
-    bottom: -70rem;
+    bottom: 80rem;
+    padding-bottom: 2rem;
   }
 
   .sasukeInfo h2 {
@@ -1424,6 +1428,10 @@ body {
 
   .sasukeInfo p {
     font-size: 2rem;
+  }
+
+  .sasukeHome {
+    margin-bottom: 20rem;
   }
 
 }
@@ -1625,6 +1633,9 @@ body {
   .sasukeIMG {
     width: 50rem;
   }
+  .sasukeInfo {
+    bottom: 55rem;
+  }
 
   .Gbg {
     height: 50rem;
@@ -1748,6 +1759,10 @@ body {
     left: 0;
   }
 
+  .sasukeInfo {
+    bottom: 50rem;
+  }
+
   .bg {
     margin-top: 18rem;
   }
@@ -1765,7 +1780,7 @@ body {
 
 
   .sasukeIMG {
-    width: 45rem;
+    width: 43rem;
   }
 
   .sasukeWrapper {
@@ -1914,7 +1929,7 @@ body {
   }
 
   .contentIMG {
-    top: -6rem;
+    top: -8rem;
   }
 
   .news {
@@ -2047,6 +2062,10 @@ body {
     height: calc(60% - 8vh);
   }
 
+  .contentIMG {
+    top: -3rem;
+  }
+
 }
 
 @media only screen and (max-width: 365px) {
@@ -2060,7 +2079,7 @@ body {
   }
 
   .contentIMG {
-    top: 0rem;
+    top: -1rem;
   }
 
   .footerMenu a {

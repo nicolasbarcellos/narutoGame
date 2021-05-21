@@ -16,6 +16,7 @@ const a1 = document.querySelector('.a1');
 const b1 = document.querySelector('.b1');
 const c1 = document.querySelector('.c1');
 const c2 = document.querySelector('.c2');
+// const circles = document.querySelectorAll()
 
 
 
