@@ -344,16 +344,19 @@ body {
   border-bottom: .7rem solid #184d86;
 }
 
-.home h1 {
+.homeTitle h1 {
+  text-transform: uppercase;
+  letter-spacing: .2rem;
   background: #184d86;
-  display: inline-block;
   z-index: 999;
   font-weight: bold;
   font-size: 2.5rem;
+  border-radius: .5rem;
   padding: 2rem;
-  transform: translateY(-3.2rem);
-  
+  margin-top: -3rem;
+  /* transform: translateY(-3.2rem); */
 }
+
 
 /* News */
 .news {
@@ -778,6 +781,7 @@ body {
 }
 
 .roundLeft img {
+  border-radius: 50%;
   max-width: 100%;
   height: auto;
   display: block;
@@ -785,19 +789,19 @@ body {
 }
 
 .roundRight img {
+  border-radius: 50%;
   height: auto;
   max-width: 100%;
   display: block;
 }
 
 .l1 {
-  width: 18rem;
   height: 100%;
   transform: translateX(-1rem);
 }
 
 .l2 {
-  transform: translateX(-6rem);
+  transform: translateX(-4rem);
 }
 
 .l3 {
@@ -1166,7 +1170,7 @@ body {
   }
 
   .l2 {
-    transform: translate(-6rem, 11rem);
+    transform: translate(-4rem, 11rem);
   }
 
   .l3 {
@@ -1919,6 +1923,14 @@ body {
 }
 
 @media only screen and (max-width: 419px) {
+  .homeTitle h1 {
+    font-size: 1rem;
+    padding: 1rem .5rem;
+    /* transform: translateY(-3.2rem); */
+  }
+  
+
+
   .b1 {
     height: 100%;
     top: -1rem;
@@ -2232,5 +2244,34 @@ body {
     font-size: 2rem;
     line-height: 2;
   }
+}
+
+.circleInactive {
+  border: none;
+}
+
+.roundLeft, .roundRight {
+  z-index: 1000;
+}
+
+.circleActive {
+ /* box-shadow: inset 0px 0px 5px 1px #8ab556, inset 0px 0px 5px 2px #8ab556; */
+}
+
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 

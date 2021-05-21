@@ -16,7 +16,54 @@ const a1 = document.querySelector('.a1');
 const b1 = document.querySelector('.b1');
 const c1 = document.querySelector('.c1');
 const c2 = document.querySelector('.c2');
-// const circles = document.querySelectorAll()
+const circles = document.querySelectorAll('[data-js="c"]');
+const author = document.querySelectorAll('.author');
+const boxImg = document.querySelector('.boxIMG img');
+const boxTitle = document.querySelector('.boxTitle h3');
+
+
+
+function activeCircle(e) {
+  circles.forEach((c) => {
+    if (c.classList.contains('circleActive')) {
+      c.classList.remove('circleActive');
+    }
+  })
+  this.classList.add('circleActive');
+  
+  const title = this.getAttribute('title');
+  const cargo = this.getAttribute('cargo');
+  const img = this.getAttribute('data-img');
+  const titleBig = this.getAttribute('boxTitle');
+  boxImg.src = img;
+  boxTitle.innerText = titleBig;
+
+  if (titleBig === 'GAARA') {
+    boxTitle.style.color = '#8d3132';
+    document.querySelector('.author h3').style.marginTop = '13rem';
+  } else {
+    boxTitle.style.color = '#5b8c79';
+    document.querySelector('.author h3').style.marginTop = '-10rem';
+  }
+
+  const titleH2 = document.createElement('h2');
+  const cargoP = document.createElement('p');
+  const p = cargoP.innerText = cargo;
+  const h2 = titleH2.innerText = title;
+  
+  document.querySelector('.author h3').innerHTML = h2; 
+  document.querySelector('.author p').innerHTML = p; 
+
+console.log(  document.querySelector('.author h3'));
+
+
+
+
+
+
+}
+
+circles.forEach((c) => c.addEventListener('click', activeCircle));
 
 
 
