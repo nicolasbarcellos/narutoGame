@@ -347,7 +347,8 @@ body {
 .homeTitle h1 {
   text-transform: uppercase;
   letter-spacing: .2rem;
-  background: #184d86;
+  background-image: linear-gradient(to right top, #fc8834, #fd8936, #fd8b38, #fe8c39, #fe8d3b, #fa8937, #f68434, #f28030, #e87526, #de6b1b, #d3600f, #c95501);
+  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, .5);
   z-index: 999;
   font-weight: bold;
   font-size: 2.5rem;
