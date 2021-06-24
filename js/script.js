@@ -38,18 +38,21 @@ function activeCircle(e) {
   boxImg.src = img;
   boxTitle.innerText = titleBig;
 
-  if (titleBig === 'GAARA') {
+  if (titleBig === 'KARIN') {
     boxTitle.style.color = '#8d3132';
-    document.querySelector('.author h3').style.marginTop = '13rem';
-  } else {
+  } else if (titleBig === 'Rock Lee') {
+    boxTitle.style.color = '#8257e6'; fc8834
+  } else if (titleBig === 'Kimimaru') {
+    boxTitle.style.color = '#fc8834';
+  }
+  else {
     boxTitle.style.color = '#5b8c79';
-    document.querySelector('.author h3').style.marginTop = '-10rem';
   }
 
   const titleH2 = document.createElement('h2');
   const cargoP = document.createElement('p');
   const p = cargoP.innerText = cargo;
-  const h2 = titleH2.innerText = title;
+  // const h2 = titleH2.innerText = title.toUpperCase();
   
   document.querySelector('.author h3').innerHTML = h2; 
   document.querySelector('.author p').innerHTML = p; 

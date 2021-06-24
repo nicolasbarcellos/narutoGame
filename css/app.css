@@ -659,7 +659,7 @@ body {
 
 .mapa {
   filter: grayscale(100%);
-  background: url('/assets/mapa.png');
+  background: url('../assets/mapa.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -690,7 +690,7 @@ body {
 
 .boxTitle h3 {
   order: 1;
-  font-size: 18rem;
+  font-size: 15rem;
   color: #5b8c79;
   letter-spacing: 1rem;
 }
@@ -798,7 +798,7 @@ body {
 
 .l1 {
   height: 100%;
-  transform: translateX(-1rem);
+  /* transform: translateX(-1rem); */
 }
 
 .l2 {
@@ -806,7 +806,7 @@ body {
 }
 
 .l3 {
-  transform: translate(-3rem, 2rem);
+  transform: translate(-2rem, 2rem);
 }
 
 .l4 {
@@ -814,11 +814,11 @@ body {
 }
 
 .r1 {
-  transform: translateX(0rem);
+  /* transform: translateX(0rem); */
 }
 
 .r2 {
-  transform: translate(4rem, 1rem);
+  transform: translate(4rem);
 }
 
 .r3 {
@@ -1243,6 +1243,10 @@ body {
   .sasukeIMG {
     width: 72rem;
   }
+
+  .boxTitle h3 {
+    font-size: 12rem;
+  }
 }
 
 @media only screen and (max-width: 1070px) {
@@ -1393,7 +1397,7 @@ body {
 
 @media only screen and (max-width: 960px) {
   .boxTitle h3 {
-    font-size: 14rem;
+    font-size: 11rem;
   }
 
   .sasukeWrapper {
@@ -1472,6 +1476,9 @@ body {
 }
 
 @media only screen and (max-width: 750px) {
+  .boxTitle h3 {
+    font-size: 8rem;
+  }
   .b1 {
     height: 90%;
     top: 5rem;
