@@ -24,6 +24,7 @@ function activeCircle(e) {
   circles.forEach((c) => {
     if (c.classList.contains("circleActive")) {
       c.classList.remove("circleActive");
+      console.log(this);
     }
   });
   this.classList.add("circleActive");
@@ -32,7 +33,6 @@ function activeCircle(e) {
   const cargo = this.getAttribute("cargo");
   const img = this.getAttribute("data-img");
   const titleBig = this.getAttribute("boxTitle");
-  console.log(titleBig);
   boxImg.src = img;
   boxTitle.innerText = titleBig;
 
